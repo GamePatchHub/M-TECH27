@@ -49,16 +49,19 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      align-items: center;
     }
 
     .project:hover {
       transform: scale(1.05);
     }
 
-    .project img {
-      width: 100%;
-      height: 220px;
+    .project img.project-main {
+      width: 250px;
+      height: auto;
       object-fit: cover;
+      border-radius: 10px;
+      margin-top: 15px;
     }
 
     .project h3 {
@@ -66,16 +69,21 @@
       margin: 0;
       font-size: 1.3rem;
       background-color: rgba(0, 0, 0, 0.4);
+      width: 100%;
+      text-align: center;
     }
 
     .download-link {
       display: block;
+      width: 80%;
       text-align: center;
       background-color: #00bcd4;
       color: white;
       padding: 10px 0;
       text-decoration: none;
       font-weight: bold;
+      border-radius: 5px;
+      margin: 15px auto;
       transition: background-color 0.3s;
     }
 
@@ -100,12 +108,15 @@
 
   <section class="projects">
     <div class="project">
-      <img src="rock-paper.png" alt="لعبة حجر ورقة مقص">
+      <img class="project-main" src="3.png" alt="لعبة حجر ورقة مقص">
       <h3>لعبة حجرة ورقة مقص - Python</h3>
+      <a class="download-link" href="https://www.mediafire.com/file/0o6zf6dqirehk0h/لعبة+حجرة+ورقة+مقص.zip/file" target="_blank">
+        تحميل اللعبة
+      </a>
     </div>
 
     <div class="project">
-      <img src="water-reminder.png" alt="برنامج شرب الماء">
+      <img class="project-main" src="2.png" alt="برنامج شرب الماء">
       <h3>منبّه شرب الماء كل نصف ساعة - Python</h3>
       <a class="download-link" href="https://www.mediafire.com/file/amqqnb1cno64usk/تذكير+بشرب+الماء+.zip/file" target="_blank">
         تحميل البرنامج
