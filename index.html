@@ -46,6 +46,9 @@
       overflow: hidden;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
       transition: transform 0.3s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     .project:hover {
@@ -63,6 +66,21 @@
       margin: 0;
       font-size: 1.3rem;
       background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .download-link {
+      display: block;
+      text-align: center;
+      background-color: #00bcd4;
+      color: white;
+      padding: 10px 0;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .download-link:hover {
+      background-color: #0097a7;
     }
 
     footer {
@@ -85,9 +103,13 @@
       <img src="rock-paper.png" alt="لعبة حجر ورقة مقص">
       <h3>لعبة حجرة ورقة مقص - Python</h3>
     </div>
+
     <div class="project">
       <img src="water-reminder.png" alt="برنامج شرب الماء">
       <h3>منبّه شرب الماء كل نصف ساعة - Python</h3>
+      <a class="download-link" href="https://www.mediafire.com/file/amqqnb1cno64usk/تذكير+بشرب+الماء+.zip/file" target="_blank">
+        تحميل البرنامج
+      </a>
     </div>
   </section>
 
